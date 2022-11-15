@@ -1,0 +1,8 @@
+.player {
+  width: 2vw;
+  height: 2vw;
+  background-color: grey;
+  border-radius: 70%;
+  border-end-start-radius: 30% !important;
+  border-top-right-radius: 30% !important;
+}

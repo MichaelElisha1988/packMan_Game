@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+app-root {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  display: grid;
+}

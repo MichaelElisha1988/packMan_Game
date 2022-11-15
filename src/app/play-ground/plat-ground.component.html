@@ -1,0 +1,26 @@
+<button (click)="backToMainMenu()" class="btn btn-primary">To Main Menu</button>
+<br />
+<br />
+<div class="game__map">
+  <div
+    class="cube"
+    *ngFor="let mapCube of maps"
+    [ngClass]="{
+      map__cube: mapCube.cubeIsActive,
+      map__cube__disabled: !mapCube.cubeIsActive
+    }"
+    id="{{ mapCube.id }}"
+  >
+    <span *ngIf="mapCube.cubeFilled">*</span>
+    <app-player class="player" *ngIf="mapCube.playerOnCube"></app-player>
+  </div>
+</div>
+
+<app-lose-game *ngIf="gameOver" class="lose__game"></app-lose-game>
+
+<br />
+<button (click)="moveCheracter($event)" class="btn btn-primary">↑</button>
+<br />
+<button (click)="moveCheracter($event)" class="btn btn-primary">←</button>
+<button (click)="moveCheracter($event)" class="btn btn-primary">↓</button>
+<button (click)="moveCheracter($event)" class="btn btn-primary">→</button>

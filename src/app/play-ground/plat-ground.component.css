@@ -1,0 +1,46 @@
+.game__map {
+  display: flex;
+  width: 40vw;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.cube {
+  padding: 0.5vw 1vw;
+  height: 4vw;
+  width: 4vw;
+}
+.map__cube {
+  border: 1px solid #f851;
+}
+.map__cube__disabled {
+  border: 1px solid #f855;
+  background-color: #f855;
+}
+.player {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  left: 0;
+  top: 0.5vw;
+  position: relative;
+}
+.btn {
+  margin: 2px;
+}
+.lose__game {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: rgb(255, 136, 85);
+  padding: 1vw;
+  border-radius: 20px;
+  font-size: 28px;
+  color: aliceblue;
+  box-shadow: 0px 0 5px 15px rgb(255 136 85);
+  rotate: 5deg;
+  font-weight: 900;
+  width: 70vw;
+}

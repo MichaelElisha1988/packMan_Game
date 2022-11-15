@@ -1,0 +1,19 @@
+<button *ngIf="menuPage" (click)="menuSelected($event)" class="btn btn-primary">
+  Go Go Go!
+</button>
+<button *ngIf="menuPage" class="btn btn-primary">See Best Scour</button>
+<br />
+<button *ngIf="menuPage" class="btn btn-primary">Exit</button>
+
+<app-plat-ground
+  [(menuPage)]="menuPage"
+  [(gamePage)]="gamePage"
+  [(scourePage)]="scourePage"
+  [(maps)]="maps"
+  [(playerCreated)]="playerCreated"
+  [(playerCurrentLocationIndex)]="playerCurrentLocationIndex"
+  [(disabledIds)]="disabledIds"
+  [intervarGame]="intervarGame"
+  [(gameOver)]="gameOver"
+  *ngIf="gamePage"
+></app-plat-ground>

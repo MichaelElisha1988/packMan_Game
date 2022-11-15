@@ -1,0 +1,9 @@
+.btn {
+  margin: 5px;
+  box-shadow: 6px 6px 15px 0px hsl(206deg 100% 73%);
+  transition: scale 0.8s, box-shadow 0.8s;
+}
+.btn:hover {
+  scale: 1.4;
+  box-shadow: 12px 12px 20px 0px rgb(58, 170, 255);
+}
