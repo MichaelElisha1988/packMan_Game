@@ -1,8 +1,10 @@
 .player {
+  transform: translate(-25%, -25%);
+  top: 25%;
+  left: 25%;
   width: 2vw;
   height: 2vw;
-  background-color: grey;
-  border-radius: 70%;
-  border-end-start-radius: 30% !important;
-  border-top-right-radius: 30% !important;
+  border-radius: 100%;
+  margin: 0;
+  background: radial-gradient(#5cabff, rgba(0, 0, 0, 0.479));
 }
