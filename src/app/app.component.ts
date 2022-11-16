@@ -12,7 +12,7 @@ export interface mapCube {
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'packMan_Game';
+  title = 'WallMan_Game';
 
   mapSize: number = 10;
 
